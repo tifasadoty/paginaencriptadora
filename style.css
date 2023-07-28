@@ -1,0 +1,165 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .item-1 #logo {
+        grid-column: 1/span1;
+
+        padding-left: 2em;
+        padding-top: 2em;
+
+
+    }
+
+    .item-5 {
+
+        grid-column: 3/span 4;
+        grid-row: 2 /span 2;
+        font-family: "Comic Neue", cursive;
+
+    }
+
+    .item-5 .input {
+        padding-left: 5em;
+        padding-top: 2em;
+
+    }
+
+    .item-5 .input #text-area {
+        border-radius: 16px;
+        resize: none;
+        width: 20em;
+    }
+
+    .item-5 .input .restriccion {
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+        font-weight: bold;
+
+    }
+
+    .item-6 {
+        grid-row: 3;
+        grid-column: 1/span 8;
+        overflow: hidden;
+
+
+    }
+
+    .item-6 .button {
+        display: flex;
+        gap: 10px;
+        padding-top: 22em;
+        padding-left: 5em;
+    }
+
+    .button #encriptar {
+        height: 2.7em;
+        width: 10em;
+        border-radius: 1rem;
+        background-color: #0A3871;
+        color: white;
+        cursor: pointer;
+        border: solid 1px;
+        outline: none;
+        transition: transform 0.3s;
+
+    }
+
+    .button #desencriptar {
+        height: 2.7em;
+        width: 10em;
+        border-radius: 1rem;
+        background-color: #D8DFE8;
+        color: #0A3871;
+        cursor: pointer;
+        border: solid 1px;
+        outline: none;
+        transition: transform 0.3s;
+
+    }
+
+    #encriptar:active {
+        transform: translateY(-4px);
+    }
+
+    #desencriptar:active {
+        transform: translateY(-4px);
+    }
+
+    .item-7 {
+        grid-column: 1/ span 3;
+        grid-row: 3/span 2;
+        margin-left: 2em;
+
+    }
+
+    .item-7 .cuadro {
+        position: relative;
+        background: #D8DFE8;
+        margin-left: 10vw;
+        width: 18em;
+        height: 20em;
+        border-radius: 32px;
+        font-family: "Comic Neue", cursive;
+
+    }
+
+    .cuadro #personaje {
+
+        object-fit: contain;
+        max-width: 60%;
+        margin-left: 4em;
+        margin-top: 2em;
+
+    }
+
+    .item-7 .cuadro #input-cuadro {
+
+        border: none;
+        resize: none;
+        border-radius: 0.5vh;
+        margin-left: 12%;
+        width: 18em;
+        height: 3em;
+        background: #D8DFE8;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .item-7 .cuadro #input-cuadro::placeholder {
+        color: black;
+        font-weight: bold;
+        font-family: "Comic Neue", cursive;
+    }
+
+    .item-7 .cuadro H6 {
+
+        text-align: center;
+        font-size: 16px;
+        margin: 5%;
+
+    }
+
+}
+

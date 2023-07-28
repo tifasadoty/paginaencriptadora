@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1">
+            <img src="img/img_4.png" alt="logo-alura" id="logo">
+        </div>
+        <div class="item-5">
+            <div class="input">
+                <textarea placeholder="Ingrese el texto aquí" id="texto"></textarea>
+                <div class="restriccion">
+                    <p>Solo letras minusculas y sin acentos</p>
+                    <img src="img/img_2.png" alt="signo-exclamacion">
+                </div>
+            </div>
+        </div>
+        <div class="item-6">
+            <div class="button">
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar </button>
+            </div>
+        </div>
+        <div class="item-7">
+            <div class="cuadro">
+                <img src="img/img_1.png" alt="persona-lupa" id="personaje">
+                <h6 id="resultado">Ningún mensaje fue encontrado </h6>
+                <textarea placeholder="Ingrese el texto que desee encriptar o desencriptar" id="input"></textarea>
+            </div>
+        </div>
+
+    </div>
+<script src="js/index.js"></script> 
+</body>
+</html>
